@@ -43,7 +43,7 @@ So you have your awesome application, good for you! Now in order for our chat-ap
     - App name       ~ The name of your app
     - App URL        ~ URL of your live deployment
     - Description    ~ A short description of your app for the users to reference
-    * example: `echo '{"name":"YOUR_APP_NAME","url":"YOUR_APP_URL","description":"APP_DESCRIPTION"}' | http post https://shrouded-everglades-62939.herokuapp.com`
+    * example: `echo '{"name":"YOUR_APP_NAME","url":"YOUR_APP_URL","description":"APP_DESCRIPTION"}' | http post https://shrouded-everglades-62939.herokuapp.com/api/v1/app-info`
 
 Or optionally<br>
 2. Send our chat server a post request with Postman
