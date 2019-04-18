@@ -47,7 +47,7 @@ So you have your awesome application, good for you! Now in order for our chat-ap
 
 Or optionally<br>
 2. Send our chat server a post request with Postman
-![Postman](./assets/postman.png)
+![Postman](./assets/Screen Shot 2019-04-18 at 9.21.02 AM.png)
 
 Here is a list of our API request handlers in case you need to update or change your existing application information
 ```
