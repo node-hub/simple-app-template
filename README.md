@@ -49,7 +49,6 @@ Or optionally<br>
 2. Send our chat server a post request with Postman
 ![Postman](./assets/postman.png)
 
-
 Here is a list of our API request handlers in case you need to update or change your existing application information
 ```
 get(id) {       // Gets a singular entry with the ID or all entries
