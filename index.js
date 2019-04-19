@@ -13,7 +13,7 @@ io.on('connection', socket => {
   console.log(`${socket.id} connected`);
   
   //A welcome message for whoever joins
-  const welcome = `Hello there ${socket.id} from template server. This is a number guessing game. Guess a number between 1-9`;
+  const welcome = `Hello there ${socket.id} from template server. This is a number guessing game. Guess a number between 0-9`;
   socket.emit('output', welcome);
   
   /*
