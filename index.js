@@ -8,7 +8,7 @@ const io = require('socket.io')(PORT);
 
 // When sockets connect to your server
 io.on('connection', socket => {
-  
+  socket.emit('clear', '');
   // A proof of life statement that console logs to your server terminal the socket id
   console.log(`${socket.id} connected`);
   
@@ -21,7 +21,9 @@ io.on('connection', socket => {
   This is your app logic in this below function. Currently, this game is just a guessing game. Guess between a number between 1-10 You can build hangman with the client clear function to repaint the hung man and the letters. You can do a number guessing game. This is your job.
   */
   socket.on('input', line => {
-    console.log('User input:', line);
+
+    console.log('User Input:', line);
+
     const num = Math.floor(Math.random()*10);
     console.log(num)
     if(num == line){
