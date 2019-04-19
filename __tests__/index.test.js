@@ -1,7 +1,7 @@
 'use strict';
 
 //HERE LIVES YOUR TEST
-const log = jest.spyOn(global.console, 'log').mockImplementation(() => {})
+const log = jest.spyOn(global.console, 'log').mockImplementation(() => {});
 
 let index = require('../index.js');
 let RNG = index.randomNumGenerator;
@@ -19,20 +19,22 @@ describe('App Template testing', () => {
   it('Our guess checker works properly', () => {
     let truthyStatement = 'YOU GUESSED MY NUMBER';
 
-    let test = CG(3,3);
+    let test = CG(3, 3);
     expect(test).toEqual(truthyStatement);
   });
   it('Our guess checker will return falsey statement if the guess is not the same', () => {
     let falseyStatement = 'You did not guess my number';
 
-    let test = CG(3,2);
+    let test = CG(3, 2);
     expect(test).toEqual(falseyStatement);
   });
-  it('Log testing',() => {
+  it('Log testing', () => {
     WM(1);
     expect(log).toHaveBeenCalled();
   });
-  it('Should return the appropriate connection message', ()=>{
-  expect(SM(1)).toEqual('Hello there 1 from template server. This is a number guessing game. Guess a number between 1-9');
-  })
+  it('Should return the appropriate connection message', () => {
+    expect(SM(1)).toEqual(
+      'Hello there 1 from template server. This is a number guessing game. Guess a number between 1-9'
+    );
+  });
 });
