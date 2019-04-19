@@ -18,7 +18,7 @@ In two terminal tabs and in this order<br>
   - Runs our template server. We suggest using [nodemon]() while you're testing functionality of your app. Otherwise, everytime you make a change to your app, you have to rerun this command<br>
 
 <span>2. Run our Hubbub Community client app =>
-* `npm i -g dumb-client` 
+* `npm i -g community-hubbub` 
   - In case it's not already installed
 * `hubbub` 
   - This should pull up the client
