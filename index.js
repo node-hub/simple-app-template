@@ -1,7 +1,7 @@
 'use strict';
 
-// HARD CODED PORT! DO NOT CHANGE
-const PORT = 4444;
+// KEEP THE HARD CODED PORT TO 4444
+const PORT = process.env.PORT || 4444;
 
 // `io` is your server instantiated with the port
 const io = require('socket.io')(PORT);
